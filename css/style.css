@@ -67,7 +67,6 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -112,7 +111,6 @@ b, strong {
  */
 
 code, kbd, samp {
-  font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -166,7 +164,6 @@ img {
  */
 
 button, input, optgroup, select, textarea {
-  font-family: inherit;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -363,13 +360,14 @@ template {
 
 :root {
   --black: #2d2d2d;
-  --main: #B5A069;
-  --main-second: #D5C392;
-  --main-light: #DBCCA9;
+  --main: #6993b5;
+  --main-second: #92b5d5;
+  --main-light: #a9b5db;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  background: url(/img/bg.png) 0 0 repeat; 
+  font-family: 'Montserrat Alternates', sans-serif;
   color: #2d2d2d;
 }
 
@@ -487,7 +485,6 @@ a:hover {
   transition: 0.3s;
   font-size: 15px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
 }
 
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
@@ -533,7 +530,6 @@ a:hover {
 
 .nav-menu .drop-down>a:after {
   content: "\ea99";
-  font-family: IcoFont;
   padding-left: 5px;
 }
 
@@ -554,7 +550,7 @@ a:hover {
 
 .nav-menu .drop-down .drop-down>a:after {
   content: "\eaa0";
-  font-family: IcoFont;
+
   position: absolute;
   right: 15px;
 }
@@ -734,7 +730,6 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
 }
 
 .section-title h2::after {
@@ -753,7 +748,6 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "Poppins", sans-serif;
   color: var(--black);
 }
 
@@ -792,11 +786,6 @@ section {
   text-align: center;
 }
 
-#primary img {
-  max-width: 70vh;
-  align-content: flex-end;
-}
-
 #primary h2 {
   color: var(--black);
   margin-bottom: 20px;
@@ -812,7 +801,6 @@ section {
 }
 
 #primary .btn-get-started {
-  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -890,11 +878,9 @@ section {
   color: var(--main);
 }
 
-
 /*--------------------------------------------------------------
 # Ask
 --------------------------------------------------------------*/
-
 
 #ask .btn-get-started {
   font-weight: 700;
@@ -920,11 +906,25 @@ section {
   background: var(--main);
 }
 
-#ask .box p{
+#ask .box p {
   color: white;
 }
 
+#ask .box .map{
+  width: 100%;
+}
 
+.ymaps-2-1-78-controls__control_toolbar{
+  display: none  !important;
+}
+
+.ymaps-2-1-78-gotoymaps__container{
+  display: none  !important;
+}
+
+.ymaps-2-1-78-map-copyrights-promo{
+  display: none  !important;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -957,7 +957,6 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
   color: white;
 }
 
